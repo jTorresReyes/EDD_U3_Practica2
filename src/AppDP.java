@@ -107,7 +107,7 @@ public class AppDP extends javax.swing.JFrame {
         data.setLvl(Integer.parseInt(jTextField3.getText()));
         
         boolean answer = lista.insertar(data.getDato(), data.getLvl());
-        String msg = "Error! No se ha insertado, cola llena!";
+        String msg = "Error! No se ha insertado, lista llena o falta de memoria RAM!";
         if(answer==true) msg = "Se ha capturado el valor con exito!";
         setTitle(msg);
         jTextField1.setText("");
